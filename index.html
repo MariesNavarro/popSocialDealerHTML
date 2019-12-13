@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0000, minimum-scale=1.0000, maximum-scale=1.0000, user-scalable=yes">
+    <title>Pop Social Dealer</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="test" class="displayFlex">
+      <a role="button" onclick="popPreview('open', 3, this)">Slider con 3</a>
+      <a role="button" onclick="popPreview('open', 5, this)">Slider con 5</a>
+      <a role="button" onclick="popPreview('open', 1, this)">Slider con 1</a>
+    </div>
+    <div id="holder" class="trans5 displayNone">
+      <div id="popupWrap" class="displayFlex">
+        <div id="contentWrap" class="trans5">
+          <div id="slider">
+            <ul id="sliderWrapper" class="displayFlex trans5"></ul>
+          </div>
+          <div id="interfaceSlider">
+            <div id="arrows" class="displayFlex">
+              <a role="button" onclick="arrowsSlider('prev')"><img src="img/arrow-slider.svg" class="cw180" width="20"></a>
+              <a role="button" onclick="arrowsSlider('next')"><img src="img/arrow-slider.svg" width="20"></a>
+            </div>
+            <ul id="bulletsSlider" class="displayFlex"></ul>
+          </div>
+        </div>
+        <div id="infoWrap">
+          <div id="headInfo" class="displayFlex">
+              <div id="titleInfo">
+                <h3 id="title-type-pop"> Publicación Orgánica </h3>
+                <p id="update-pop">(Último cambio: 8/11/2019 11:17 - Valeria Ruíz)</p>
+              </div>
+              <div id="closeWrap">
+                <a role="button" onclick="popPreview('close', 0, this)">
+                  <span class="trans5"></span>
+                  <span class="trans5"></span>
+                </a>
+              </div>
+          </div>
+          <div id="detailsWrap">
+            <h4><span>Mostrar </span>Detalles de Publicación</h4>
+            <div id="openMobile">
+              <a role="button" onclick="showDetails('open', this)">
+                <img src="img/arrow.svg" width="30" class="cw0 trans5">
+              </a>
+            </div>
+            <ul id="detailsUl" class="displayFlex">
+              <li class="displayFlex">
+                <h5>Texto</h5>
+                <p id="detalleTexto">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+              </li>
+
+              <li class="displayFlex">
+                <h5>Fecha y hora sugerida</h5>
+                <p id="detalleFecha">
+                  29/11/2019 10:00
+                </p>
+              </li>
+
+              <li class="displayFlex">
+                <h5>Estatus</h5>
+                <p id="detalleEstado">
+                  Sugerido
+                </p>
+              </li>
+
+              <li class="displayFlex">
+                <h5>Zona</h5>
+                <p id="detalleZona">
+                  01 Distrito Federal
+                </p>
+              </li>
+
+              <li class="displayFlex">
+                <h5>Concesionario</h5>
+                <p id="detalleCon">
+                  Germautos Tláhuac, S.A De C.V
+                </p>
+              </li>
+
+              <li class="displayFlex">
+                <h5>Pilar</h5>
+                <p id="detallePilar">
+                  Sporty
+                </p>
+              </li>
+
+              <li class="displayFlex">
+                <h5>Campaña</h5>
+                <p id="detalleCampana">
+                  Contenido Sporty
+                </p>
+              </li>
+
+              <li class="displayFlex">
+                <h5>Modelo</h5>
+                <p id="detalleModelo">
+                  Tiguan
+                </p>
+              </li>
+            </ul>
+          </div>
+          <a class="buttonHover" role="button" class="trans5">
+            <div class="trans5"></div>
+            <div class="trans5"></div>
+            <p class="trans5">Publicar este material</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/main.js" charset="utf-8"></script>
+</html>

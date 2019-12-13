@@ -1,0 +1,1 @@
+var layoutMobile=!1;window.onload=function(){};
